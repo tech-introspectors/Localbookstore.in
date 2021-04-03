@@ -5,7 +5,7 @@ import {
   primaryColor,
   whiteShade,
 } from "../../constants/constants";
-import { Button } from "../button/Button";
+import { Button } from "./../../components/button/Button";
 import FormInputField from "./form/FormInputField";
 
 const Container = styled.div`
@@ -153,7 +153,7 @@ const LoginSystem = ({ reverse }) => {
                 </Discription1>
                 <Discription2>If Already register? Sign In below!</Discription2>
                 <Button
-                  to="/signin"
+                  to="/loginSystem"
                   border="true"
                   textColor="#fff"
                   onClick={_onClickToggleSignIn}
@@ -179,7 +179,7 @@ const LoginSystem = ({ reverse }) => {
                   Don't hava an account? Sign Up below!
                 </Discription2>
                 <Button
-                  to="/signup"
+                  to="/loginSystem"
                   border={true}
                   textColor="#fff"
                   onClick={_onClickToggleSignUp}
