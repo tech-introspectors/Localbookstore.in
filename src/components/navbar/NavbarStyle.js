@@ -122,7 +122,7 @@ export const NavWrap = styled.div`
 export const NavLink = css`
   text-decoration: none;
   color: ${whiteShade};
-  padding: 0 1rem;
+  margin: 0 1rem;
   font-size: 1.1rem;
   cursor: pointer;
 `;
@@ -140,4 +140,21 @@ export const NavMenu = styled.div``;
 
 export const NavMenuLinks = styled(Link)`
   ${NavLink}
+  position: relative;
+  border-bottom: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 110%;
+    width: 0%;
+    height: 2px;
+    border-bottom: 2.5px solid ${whiteShade};
+    bottom: 15px;
+    transition: all 0.4s linear 0s;
+  }
+
+  &:hover::before {
+    width: 100%;
+  }
 `;

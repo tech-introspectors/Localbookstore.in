@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import {
   darkPrimaryColor,
@@ -15,6 +16,47 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   position: relative;
+  z-index: 101;
+  background: #fff;
+`;
+
+const Logo = styled(Link)`
+  display: flex;
+  justify-contetn: center;
+  align-items: center;
+  position: absolute;
+  top: 1rem;
+  left: 2rem;
+  z-index: 9999;
+  cursor: pointer;
+  text-decoration: none;
+
+  h1 {
+    font-size: 1.5rem;
+    color: ${darkPrimaryColor};
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 4px;
+      background: ${primaryColor};
+      top: 110%;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 30%;
+      height: 8px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      top: 115%;
+      background: ${darkPrimaryColor};
+      animation: _move 1s infinite;
+    }
+  }
 `;
 
 const FormContainer = styled.div`
@@ -43,6 +85,7 @@ const LeftContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #fff;
 `;
 
 const Form = styled.form``;
@@ -111,6 +154,9 @@ const LoginSystem = ({ reverse }) => {
 
   return (
     <Container>
+      <Logo to="/">
+        <h1>The localbookstore</h1>
+      </Logo>
       {toggleSignUp && (
         <SignUpForm>
           <FormContainer>
