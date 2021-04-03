@@ -1,12 +1,9 @@
 import React from "react";
-import { Route, Switch } from "react-router";
 import Navbar from "./components/navbar/Navbar";
 import GlobalStyle from "./GlobalStyle";
-import Homepage from "./pages/Homepage/Homepage";
-import LoginSystem from "./pages/loginSystem/LoginSystem";
-import Profilepage from "./pages/Profilepage/Profilepage";
+import LoginSystem from "./components/loginSystem/LoginSystem";
 // import ToggleNavbar from "./components/navbar/ToggleNavbar";
-// import Footer from "./components/footer/Footer";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
@@ -14,13 +11,9 @@ function App() {
       <GlobalStyle />
       <Navbar />
 
-      <Switch>
-        <Route path="/" exact component={Homepage} />
-        <Route path="/profile" component={Profilepage} />
-        <Route path="/loginsystem" component={LoginSystem} />
-      </Switch>
+      <LoginSystem reverse={true} />
 
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
