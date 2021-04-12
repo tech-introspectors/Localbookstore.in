@@ -6,7 +6,7 @@ import Homepage from "./pages/Homepage/Homepage";
 import LoginSystem from "./pages/loginSystem/LoginSystem";
 import Profilepage from "./pages/Profilepage/Profilepage";
 // import ToggleNavbar from "./components/navbar/ToggleNavbar";
-// import Footer from "./components/footer/Footer";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
         <Route path="/loginsystem" component={LoginSystem} />
       </Switch>
 
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
