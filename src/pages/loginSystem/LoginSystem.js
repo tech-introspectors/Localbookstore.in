@@ -35,6 +35,7 @@ const Logo = styled(Link)`
     font-size: 1.5rem;
     color: ${darkPrimaryColor};
     position: relative;
+    text-transform: uppercase;
 
     &::before {
       content: "";
