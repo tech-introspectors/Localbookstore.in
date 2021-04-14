@@ -26,7 +26,7 @@ const Wrapper = styled.div`
   widht: 80vw;
   margin: auto;
   min-height: 40vh;
-  height:40vh:
+  height: 40vh;
   padding: 3rem 3rem;
   transition: all 0.5s ease 0s;
 
@@ -46,11 +46,12 @@ const LogoContainer = styled.div`
 const Logo = styled(Link)`
   text-decoration: none;
   h2 {
+    font-size: 3rem;
     color: #fff;
     text-align: center;
 
     @media screen and (max-width: 768px) {
-      margin-top: 5rem;
+      margin-top: 0.5rem;
     }
   }
 `;
@@ -60,7 +61,7 @@ const ColumnsStyle = css`
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  margin: 0 1rem;
+  margin: 0 1.6rem;
 
   @media screen and (max-width: 768px) {
     margin-bottom: 2rem;
@@ -71,21 +72,17 @@ const ColumnOne = styled.div`
   ${ColumnsStyle}
 
   @media screen and (max-width: 768px) {
-    margin-top: 5rem;
+    margin-top: 0.5rem;
   }
 `;
 const ItemLink = styled(Link)`
   text-decoration: none;
-  margin-bottom: 1rem;
+  margin-bottom: 1.6rem;
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
 
   &:hover {
     text-decoration: underline;
-  }
-
-  @media screen and (max-width: 768px) {
-    font-size: 1.2rem;
   }
 `;
 
@@ -107,13 +104,10 @@ const Content = styled.div`
   p {
     color: #fff;
     text-transform: uppercase;
-    word-spacing: 5px;
+    word-spacing: 0.5rem;
     text-align: center;
-    padding: 16px 0;
-
-    @media screen and (max-width: 768px) {
-      font-size: 0.65rem;
-    }
+    padding: 2rem 0;
+    font-size: 1.3rem;
   }
 `;
 

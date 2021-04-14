@@ -8,19 +8,19 @@ export const Button = styled(Link)`
   white-space: nowrap;
   outline: none;
   border: ${(border) => (border ? `2px solid ${whiteShade}` : "none")};
-  border-radius: ${({ borderRadius }) => (borderRadius ? 12 : 50)}px;
-  min-width: ${({ minWidth }) => (minWidth ? minWidth : 200)}px;
-  max-widht: 250px;
+  border-radius: ${({ borderRadius }) => (borderRadius ? 1.2 : 5)}rem;
+  min-width: ${({ minWidth }) => (minWidth ? minWidth : 20)}rem;
+  max-widht: 25rem;
   cursor: pointer;
   text-decoration: none;
   transition: 0.3s;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: ${({ big }) => (big ? "10px 30px" : "12px 24px")};
+  padding: ${({ big }) => (big ? "1rem 3rem" : "1.2rem 2.4rem")};
   color: ${({ textColor }) => (textColor ? textColor : `${primaryColor}`)};
-  font-size: ${(big) => (big ? "20px" : "14px")};
+  font-size: ${(big) => (big ? "2rem" : "1.4rem")};
   &:hover {
-    transform: translateY(-2px);
+    transform: translateY(-0.2rem);
   }
 `;

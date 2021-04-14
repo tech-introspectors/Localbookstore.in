@@ -53,14 +53,13 @@ const Navbar = () => {
                 type="text"
                 id="serachbox"
                 placeholder="Search The Local Bookstore.in"
-                title="Type in a category"
               />
             </SearchBox>
             <SearchIcon onClick={handleToggleSearch} />
             <CartContainer to="/shoppingcart">
               <AddShoppingCart />
             </CartContainer>
-            <Profile to="profile">Account</Profile>
+            <Profile to="/profile">Account</Profile>
             <BtnWrapper>
               <Button
                 to="/loginSystem"
@@ -68,7 +67,7 @@ const Navbar = () => {
                 primary={true}
                 textColor="#fff"
                 big={true}
-                minWidth="150"
+                minWidth="15"
               >
                 Sign Up
               </Button>

@@ -5,6 +5,10 @@ import styled from "styled-components";
 // Import css files
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import {
+  darkPrimaryColor,
+  darkSecondaryColor,
+} from "../../../constants/constants";
 
 const Container = styled.div`
   padding: 0 0 12vh 0;
@@ -12,14 +16,33 @@ const Container = styled.div`
   img {
     width: 100%;
     object-fit: cover;
-    border-radius: 30px;
+    border-radius: 3rem;
     cursor: pointer;
   }
 
   .category-img {
     border: none;
-    border-radius: 30px;
+    border-radius: 3rem;
     overflow: hidden;
+  }
+
+  .slick-prev,
+  .slick-next {
+    ${"" /* background: ${darkPrimaryColor}; */}
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    color: red;
+    z-index: 1;
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 5rem;
+    line-height: 1;
+    color: ${darkPrimaryColor};
+
+    }
   }
 `;
 
@@ -28,8 +51,8 @@ const CategoryCarousel = ({ categoryData }) => {
     dots: true,
     infinite: false,
     speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToShow: 5,
+    slidesToScroll: 5,
     initialSlide: 0,
     responsive: [
       {

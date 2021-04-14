@@ -15,19 +15,20 @@ const Label = styled.div`
   label {
     color: ${primaryColor};
     font-weight: bold;
+    font-size: 2rem;
   }
 `;
 const InputField = styled.div`
-  margin-bottom: 1rem;
+  margin-bottom: 1.6rem;
 
   input {
-    width: 20vw;
-    padding: 1.1rem;
+    width: 25vw;
+    padding: 1.6rem;
     border: none;
     border-radius: ${borderRadius};
     outline: none;
     background: ${whiteShade};
-    font-size: 1rem;
+    font-size: 1.8rem;
   }
 `;
 
