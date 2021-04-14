@@ -12,9 +12,6 @@ import FormInputField from "./form/FormInputField";
 const Container = styled.div`
   width: 100%;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: relative;
   z-index: 101;
   background: #fff;
@@ -30,9 +27,11 @@ const Logo = styled(Link)`
   z-index: 9999;
   cursor: pointer;
   text-decoration: none;
+  width: fit-content;
+  height: fit-content;
 
   h1 {
-    font-size: 1.5rem;
+    font-size: 3rem;
     color: ${darkPrimaryColor};
     position: relative;
     text-transform: uppercase;
@@ -41,7 +40,7 @@ const Logo = styled(Link)`
       content: "";
       position: absolute;
       width: 100%;
-      height: 4px;
+      height: 0.4rem;
       background: ${primaryColor};
       top: 110%;
     }
@@ -50,7 +49,7 @@ const Logo = styled(Link)`
       content: "";
       position: absolute;
       width: 30%;
-      height: 8px;
+      height: 0.8rem;
       left: 50%;
       transform: translate(-50%, -50%);
       top: 115%;
@@ -71,14 +70,20 @@ const FormContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: ${(reverse) => (reverse ? "" : "row-reverse")};
-  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+  box-shadow: 0rem 2rem 2rem rgba(0, 0, 0, 0.2),
+    0rem 0rem 5rem rgba(0, 0, 0, 0.2);
   position: absolute;
   transition: all 0.5s ease;
+
+  @media screen and (max-widht: 768px) {
+    flex-direction: column;
+  }
 `;
 
 const ContainerTitle = styled.h1`
   color: ${darkPrimaryColor};
   margin-bottom: 2rem;
+  font-size: 3rem;
 `;
 const LeftContainer = styled.div`
   width: 50vw;
@@ -112,20 +117,21 @@ const Title = styled.h1`
   font-size: clamp(1rem, 8vw, 3rem);
   text-align: center;
   margin-bottom: 4rem;
+  font-size: 3.5rem;
 `;
 
 const Discription1 = styled.p`
   color: ${whiteShade};
   text-align: center;
-  font-size: clamp(1rem, 8vw, 1.2rem);
-  margin-bottom: 3rem;
+  font-size: clamp(1rem, 8vw, 2rem);
+  margin-bottom: 2.5rem;
 `;
 
 const Discription2 = styled.p`
   color: ${whiteShade};
   text-align: center;
-  font-size: clamp(1rem, 8vw, 1rem);
-  margin-bottom: 1.5rem;
+  font-size: clamp(1rem, 8vw, 1.6rem);
+  margin-bottom: 2rem;
 `;
 
 const BtnWrapper = styled.div`

@@ -32,6 +32,8 @@ export const Logo = styled(Link)`
   margin-right: auto;
   text-decoration: none;
   h3 {
+    font-size: 2.5rem;
+    text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
     color: ${whiteShade};
     margin-left: 2rem;
     cursor: pointer;
@@ -62,20 +64,21 @@ export const SearchBox = styled.div`
   transition: all 0.5s ease 0s;
 
   input {
-    padding: 10px 24px;
+    padding: 1rem 2.4rem;
     width: 100%;
-    font-size: 1rem;
+    font-size: 1.6rem;
     outline: none;
     border: none;
-    border-radius: 10px;
+    border-radius: 1rem;
   }
 `;
 
 export const IconsStyle = css`
   color: #fff;
   margin-right: 2rem;
-  width: 20px;
-  height: 20px;
+  margin-left: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
   cursor: pointer;
 `;
 
@@ -92,6 +95,7 @@ export const AddShoppingCart = styled(MdAddShoppingCart)`
   ${IconsStyle}
 `;
 export const Profile = styled(Link)`
+  font-size: 2rem;
   text-decoration: none;
   color: #fff;
   margin-right: 5rem;
@@ -128,11 +132,11 @@ export const NavLink = css`
 `;
 
 export const MenuBars = styled(FaBars)`
-  width: 25px;
-  height: 25px;
+  width: 2.5rem;
+  height: 2.5rem;
   color: ${whiteShade};
-  margin-left: 2rem;
-  margin-right: 1rem;
+  margin-left: 3rem;
+  margin-right: 2rem;
   background: transparent;
   cursor: pointer;
 `;
@@ -140,6 +144,7 @@ export const NavMenu = styled.div``;
 
 export const NavMenuLinks = styled(Link)`
   ${NavLink}
+  font-size: 1.9rem;
   position: relative;
   border-bottom: 0;
 
@@ -148,9 +153,9 @@ export const NavMenuLinks = styled(Link)`
     position: absolute;
     top: 110%;
     width: 0%;
-    height: 2px;
-    border-bottom: 2.5px solid ${whiteShade};
-    bottom: 15px;
+    height: 0.2rem;
+    border-bottom: 0.25rem solid ${whiteShade};
+    bottom: 1.5rem;
     transition: all 0.4s linear 0s;
   }
 

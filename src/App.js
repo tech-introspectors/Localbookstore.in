@@ -5,10 +5,10 @@ import GlobalStyle from "./GlobalStyle";
 import Homepage from "./pages/Homepage/Homepage";
 import LoginSystem from "./pages/loginSystem/LoginSystem";
 import Profilepage from "./pages/Profilepage/Profilepage";
-// import ToggleNavbar from "./components/navbar/ToggleNavbar";
-import Footer from "./components/footer/Footer";
+import ErrorPage from "./pages/ErrorPage/ErrorPage";
+import CategoryPage from "./pages/CategoryPage/CategoryPage";
 
-function App() {
+function App({ matchs }) {
   return (
     <div>
       <GlobalStyle />
@@ -18,9 +18,9 @@ function App() {
         <Route path="/" exact component={Homepage} />
         <Route path="/profile" component={Profilepage} />
         <Route path="/loginsystem" component={LoginSystem} />
+        <Route path={"/academic"} component={CategoryPage} />
+        <Route component={ErrorPage} />
       </Switch>
-
-      <Footer />
     </div>
   );
 }

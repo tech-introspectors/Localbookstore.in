@@ -1,7 +1,7 @@
 export const MenuData = [
   {
     title: "Academic",
-    path: "/academin",
+    path: "/academic",
   },
   {
     title: "Fiction",
