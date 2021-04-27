@@ -1,0 +1,19 @@
+/* back to top button */
+
+#scroll_top a {
+  position: fixed;
+  bottom: 2rem;
+  right: 1rem;
+  z-index: 1;
+  background-color: var(--primary);
+  padding: 0.7rem 0.7rem;
+  border-radius: 2rem;
+  color: #fff;
+  font-size: 3rem;
+}
+
+#scroll_top a.isActive {
+  background-color: transparent;
+  color: var(--primary);
+  border: 0.2rem solid var(--primary);
+}

@@ -15,6 +15,7 @@ import {
   darkSecondaryColor,
 } from "../../constants/constants";
 import BannerCarousel from "../../components/Curousels/BannerCarousel/BannerCarousel";
+// import BackToTop from "../../components/backToTop/BackToTop";
 // import { whiteShade } from "../../constants/constants";
 
 const HomepageSection = styled.section`
@@ -68,6 +69,7 @@ const CategoryContainer = styled.div`
 const Homepage = (props) => {
   return (
     <HomepageSection>
+      {/* <BackToTop /> */}
       <BannerCarousel bannerData={BannerData} />
 
       <ProductSlidesContainer>

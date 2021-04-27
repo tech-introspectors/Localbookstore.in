@@ -4,6 +4,8 @@ import ProductCard from "../../components/ProductCard/ProductCard";
 import { productData } from "../../data/productsData/productsData";
 import Footer from "./../../components/footer/Footer";
 
+import { useHistory } from "react-router-dom";
+
 const MainContainer = styled.div`
   width: 100vw;
   heigth: auto;
@@ -17,7 +19,10 @@ const MainContainer = styled.div`
 const Container = styled.div``;
 
 const CategoryPage = ({ categoryName }) => {
-  const handleCard = () => {};
+  const histroy = useHistory();
+  const handleCard = () => {
+    histroy.push(`/product`);
+  };
 
   return (
     <>
