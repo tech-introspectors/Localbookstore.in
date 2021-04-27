@@ -5,10 +5,7 @@ import styled from "styled-components";
 // Import css files
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import {
-  darkPrimaryColor,
-  darkSecondaryColor,
-} from "../../../constants/constants";
+import { darkPrimaryColor } from "../../../constants/constants";
 
 const Container = styled.div`
   padding: 0 0 12vh 0;

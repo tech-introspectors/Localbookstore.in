@@ -63,7 +63,6 @@ const Navbar = () => {
             <BtnWrapper>
               <Button
                 to="/loginSystem"
-                borderRadius={true}
                 primary={true}
                 textColor="#fff"
                 big={true}

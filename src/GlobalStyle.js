@@ -23,6 +23,10 @@ const GlobalStyle = createGlobalStyle`
     @media screen and (max-width: 768px){
         font-size: 45%;
     }
+
+    @media screen and (max-width: 640px){
+        font-size: 35%
+    }
     
 `;
 

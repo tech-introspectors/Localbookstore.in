@@ -8,7 +8,8 @@ export const Button = styled(Link)`
   white-space: nowrap;
   outline: none;
   border: ${(border) => (border ? `2px solid ${whiteShade}` : "none")};
-  border-radius: ${({ borderRadius }) => (borderRadius ? 1.2 : 5)}rem;
+  border-radius: ${({ borderRadius }) =>
+    borderRadius ? borderRadius : 1.2}rem;
   min-width: ${({ minWidth }) => (minWidth ? minWidth : 20)}rem;
   max-widht: 25rem;
   cursor: pointer;
