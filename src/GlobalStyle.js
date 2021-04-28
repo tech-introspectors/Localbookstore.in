@@ -7,14 +7,16 @@ const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
         font-family: 'Montserrat', sans-serif;
     }
-    html, body{
+    html{
         font-family: 'Open Sans', sans-serif;
         overflow-x: hidden;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        scrol-behaviour: smooth;
+        scroll-behavior: smooth;
         font-size: 62.5%;
     }
+
+
 
     @media screen and (max-width: 998px){
         font-size: 55%;

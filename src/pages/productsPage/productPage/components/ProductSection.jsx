@@ -24,7 +24,7 @@ const ProductSection = ({
           <Image src={img} alt="img" />
         </Div>
       </ContainerLeft>
-      <Spacer />
+      <Spacer width="10" />
       <ContainerRight>
         <Title>{title}</Title>
         <SubTitle>
@@ -66,7 +66,7 @@ const MainContainer = styled.div`
 
 const ContainerLeft = styled.div`
   padding: 4rem;
-  margin: 3rem;
+  margin: 3rem 0;
   background: ${lightWhiteShade};
   border-radius: ${borderRadius};
 `;
