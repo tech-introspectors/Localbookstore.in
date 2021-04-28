@@ -15,6 +15,7 @@ import {
   darkSecondaryColor,
 } from "../../constants/constants";
 import BannerCarousel from "../../components/Curousels/BannerCarousel/BannerCarousel";
+import { MainTitle } from "../../style/styledCompnent";
 // import BackToTop from "../../components/backToTop/BackToTop";
 // import { whiteShade } from "../../constants/constants";
 
@@ -74,15 +75,15 @@ const Homepage = (props) => {
 
       <ProductSlidesContainer>
         <CategoryContainer>
-          <h2>Academic Books:</h2>
+          <MainTitle>Academic Books:</MainTitle>
           <CategoryCarousel categoryData={category_1Data} />
         </CategoryContainer>
         <CategoryContainer>
-          <h2>Fiction Books:</h2>
+          <MainTitle>Fiction Books:</MainTitle>
           <CategoryCarousel categoryData={category_1Data} />
         </CategoryContainer>
         <CategoryContainer>
-          <h2>Motivation Books:</h2>
+          <MainTitle>Motivation Books:</MainTitle>
           <CategoryCarousel categoryData={category_1Data} />
         </CategoryContainer>
       </ProductSlidesContainer>
