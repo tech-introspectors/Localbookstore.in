@@ -57,7 +57,7 @@ const Navbar = () => {
             </SearchBox>
             <SearchIcon onClick={handleToggleSearch} />
             <CartContainer to="/shoppingcart">
-              <AddShoppingCart />
+              <AddShoppingCart/>
             </CartContainer>
             <Profile to="/profile">Account</Profile>
             <BtnWrapper>

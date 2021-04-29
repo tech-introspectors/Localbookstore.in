@@ -15,7 +15,7 @@ import {
   darkSecondaryColor,
 } from "../../constants/constants";
 import BannerCarousel from "../../components/Curousels/BannerCarousel/BannerCarousel";
-import { MainTitle } from "../../style/styledCompnent";
+import { MainTitle } from "../../style/styledComponent";
 // import BackToTop from "../../components/backToTop/BackToTop";
 // import { whiteShade } from "../../constants/constants";
 

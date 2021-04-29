@@ -11,7 +11,7 @@ import { ImStarFull, ImStarHalf } from "react-icons/im";
 
 const Container = styled.div`
   width: 60vw;
-  heigth: 50vh;
+  height: 50vh;
   background: ${lightWhiteShade};
   padding: 5rem;
   margin: 4rem;

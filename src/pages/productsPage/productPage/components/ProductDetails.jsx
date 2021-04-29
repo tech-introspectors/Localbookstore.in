@@ -1,6 +1,6 @@
 import React from "react";
 import styled, { css } from "styled-components";
-import { MainTitle, Spacer } from "../../../../style/styledCompnent";
+import { MainTitle, Spacer } from "../../../../style/styledComponent";
 
 const ProductDetails = ({
   productAuthor,
