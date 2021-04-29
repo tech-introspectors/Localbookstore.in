@@ -16,18 +16,33 @@ const GlobalStyle = createGlobalStyle`
         font-size: 62.5%;
     }
 
+    h1{
+        font-size: 2.2rem;
+        line-height: 3rem;
+
+    }
+
+    h2{
+        font-size: 2rem;
+        line-height: 2.5rem;
+
+    }
+    
+    p{
+        font-size: 1.4rem;
+    }
 
 
     @media screen and (max-width: 998px){
-        font-size: 55%;
+        html{
+            font-size: 55%;
+        }
     }
 
     @media screen and (max-width: 768px){
-        font-size: 45%;
-    }
-
-    @media screen and (max-width: 640px){
-        font-size: 35%
+        html{
+            font-size: 45%;
+        }
     }
     
 `;

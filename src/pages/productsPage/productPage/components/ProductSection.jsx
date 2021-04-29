@@ -7,7 +7,7 @@ import {
   lightWhiteShade,
   whiteShade,
 } from "../../../../constants/constants";
-import { Spacer } from "../../../../style/styledCompnent";
+import { Spacer } from "../../../../style/styledComponent";
 
 const ProductSection = ({
   img,

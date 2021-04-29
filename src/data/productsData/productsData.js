@@ -12,6 +12,7 @@ export const productData = [
     offerPercentage: 23,
     message: "Save extra with Cashback",
     deliveryBy: "Tomorrow, April 14",
+    productInStock: "5",
   },
   {
     img: img2,
@@ -23,6 +24,7 @@ export const productData = [
     offerPercentage: 23,
     message: "Save extra with Cashback",
     deliveryBy: "Tomorrow, April 14",
+    productInStock: "2",
   },
   {
     img: img1,
@@ -34,6 +36,7 @@ export const productData = [
     offerPercentage: 23,
     message: "Save extra with Cashback",
     deliveryBy: "Tomorrow, April 14",
+    productInStock: "1",
   },
   {
     img: img2,
@@ -45,5 +48,6 @@ export const productData = [
     offerPercentage: 23,
     message: "Save extra with Cashback",
     deliveryBy: "Tomorrow, April 14",
+    productInStock: "8",
   },
 ];

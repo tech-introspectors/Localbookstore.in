@@ -6,6 +6,7 @@ import Homepage from "./pages/Homepage/Homepage";
 import LoginSystem from "./pages/loginSystem/LoginSystem";
 import Profilepage from "./pages/Profilepage/Profilepage";
 import ErrorPage from "./pages/ErrorPage/ErrorPage";
+import ShoppingCart from "./pages/shoppingCart/ShoppingCart";
 import CategoryPage from "./pages/CategoryPage/CategoryPage";
 import ProductPage from "./pages/productsPage/productPage/ProductPage";
 
@@ -21,6 +22,7 @@ function App({ matchs }) {
         <Route path="/loginsystem" component={LoginSystem} />
         <Route path={"/academic"} component={CategoryPage} />
         <Route path={"/product"} component={ProductPage} />
+        <Route path="/shoppingcart" component={ShoppingCart} />
         <Route component={ErrorPage} />
       </Switch>
     </div>
