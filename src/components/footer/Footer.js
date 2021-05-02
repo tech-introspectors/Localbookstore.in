@@ -23,7 +23,7 @@ const Wrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   max-width: 80vw;
-  widht: 80vw;
+  width: 80vw;
   margin: auto;
   min-height: 40vh;
   height: 40vh;
@@ -40,6 +40,7 @@ const Wrapper = styled.div`
 const LogoContainer = styled.div`
   @media screen and (max-width: 768px) {
     width: 100%;
+    padding-bottom: 2rem;
   }
 `;
 
@@ -52,6 +53,7 @@ const Logo = styled(Link)`
 
     @media screen and (max-width: 768px) {
       margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
     }
   }
 `;

@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { Spacer } from "../../style/styledComponent";
-import { darkPrimaryColor, lightWhiteShade } from "../../constants/constants";
-import Checkbox from "../../components/checkBox/Checkbox";
+import {
+  darkGray,
+  whiteShade,
+  darkPrimaryColor,
+  lightWhiteShade,
+} from "../../constants/constants";
+import { Button } from "./../button/Button";
 
 const ShoppingCartCard = ({
   productImg,
@@ -13,13 +18,25 @@ const ShoppingCartCard = ({
 }) => {
   let inStock = "3";
 
+  const [numberOfItems, setNumberOfItems] = useState(1);
+
+  const increament = () => {
+    if (numberOfItems < 10) {
+      setNumberOfItems(numberOfItems + 1);
+    }
+  };
+
+  const decreament = () => {
+    if (numberOfItems > 1) {
+      setNumberOfItems(numberOfItems - 1);
+    }
+  };
+
   return (
     <Container>
-      <CheckBoxImageContainer>
-        <Checkbox />
-        <Spacer width="5" />
+      <ImageContainer>
         <Image src={productImg} alt={alt} />
-      </CheckBoxImageContainer>
+      </ImageContainer>
       <Spacer width="10" height="5" />
       <Div>
         <TitleContainer>
@@ -33,6 +50,35 @@ const ShoppingCartCard = ({
         ) : (
           <p style={{ color: "green" }}>In Stock</p>
         )}
+        <Spacer height="3" />
+        <BottomContainer>
+          <IncreDecreContainer>
+            <Button
+              onClick={decreament}
+              primary="true"
+              bgColor={darkGray}
+              textColor="#000"
+              minWidth="2"
+            >
+              <h2>-</h2>
+            </Button>
+            <h3>{numberOfItems}</h3>
+            <Button
+              onClick={increament}
+              primary="true"
+              bgColor={darkGray}
+              textColor="#000"
+              minWidth="2"
+            >
+              <h2>+</h2>
+            </Button>
+          </IncreDecreContainer>
+
+          <Spacer height="3" />
+          <Button primary="true" textColor={whiteShade} bgColor="red">
+            Remove
+          </Button>
+        </BottomContainer>
       </Div>
     </Container>
   );
@@ -45,17 +91,17 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   padding: 1.5rem 5rem;
-  width: 70%;
-  margin: 1.5rem auto;
+  width: 100%;
+  margin: 2rem 0;
   border-radius: 1rem;
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
-    width: 80%;
+    width: 100%;
   }
 `;
 
-const CheckBoxImageContainer = styled.div`
+const ImageContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -81,5 +127,29 @@ const TitleContainer = styled.div`
   h2 {
     font-weight: bold;
     line-height: 3rem;
+  }
+`;
+
+const BottomContainer = styled.div`
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+`;
+const IncreDecreContainer = styled.div`
+  display: flex;
+  background-color: ${whiteShade};
+  border-radius: 1rem;
+  justify-content: space-between;
+  align-items: center;
+
+  h3 {
+    padding: 0 2rem;
   }
 `;
