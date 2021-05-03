@@ -27,9 +27,14 @@ const GlobalStyle = createGlobalStyle`
         line-height: 2.5rem;
 
     }
+
+    h3{
+        font-size:   1.9rem;
+        line-height: 2.2rem;  
+    }
     
     p{
-        font-size: 1.4rem;
+        font-size: 1.7rem;
     }
 
 

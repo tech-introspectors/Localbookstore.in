@@ -11,7 +11,7 @@ export const Button = styled(Link)`
   border-radius: ${({ borderRadius }) =>
     borderRadius ? borderRadius : 1.2}rem;
   min-width: ${({ minWidth }) => (minWidth ? minWidth : 20)}rem;
-  max-widht: 25rem;
+  max-width: 25rem;
   cursor: pointer;
   text-decoration: none;
   transition: 0.3s;
@@ -23,5 +23,6 @@ export const Button = styled(Link)`
   font-size: ${(big) => (big ? "2rem" : "1.4rem")};
   &:hover {
     transform: translateY(-0.2rem);
+    opacity: 0.8;
   }
 `;

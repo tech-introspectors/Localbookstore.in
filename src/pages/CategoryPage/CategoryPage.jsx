@@ -8,9 +8,9 @@ import { useHistory } from "react-router-dom";
 
 const MainContainer = styled.div`
   width: 100vw;
-  heigth: auto;
+  height: auto;
   display: flex;
-  align-item: center;
+  align-items: center;
   justify-content: center;
   margin-bottom: 10%;
   transform: translateY(10%);
