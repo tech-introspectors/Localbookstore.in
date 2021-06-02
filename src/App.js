@@ -9,6 +9,7 @@ import ErrorPage from "./pages/ErrorPage/ErrorPage";
 import ShoppingCart from "./pages/shoppingCart/ShoppingCart";
 import CategoryPage from "./pages/CategoryPage/CategoryPage";
 import ProductPage from "./pages/productsPage/productPage/ProductPage";
+import TermsAndConditions from "./pages/TermsAndConditions/TermsAndConditions";
 
 function App({ matchs }) {
   return (
@@ -23,6 +24,7 @@ function App({ matchs }) {
         <Route path={"/academic"} component={CategoryPage} />
         <Route path={"/product"} component={ProductPage} />
         <Route path="/shoppingcart" component={ShoppingCart} />
+        <Route path="/termsAndConditions" component={TermsAndConditions} />
         <Route component={ErrorPage} />
       </Switch>
     </div>
