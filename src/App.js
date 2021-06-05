@@ -10,12 +10,15 @@ import ShoppingCart from "./pages/shoppingCart/ShoppingCart";
 import CategoryPage from "./pages/CategoryPage/CategoryPage";
 import ProductPage from "./pages/productsPage/productPage/ProductPage";
 import TermsAndConditions from "./pages/TermsAndConditions/TermsAndConditions";
+import BackToTop from "./components/backToTop/BackToTop";
+import styled from "styled-components";
 
-function App({ matchs }) {
+function App() {
   return (
-    <div>
+    <Div>
       <GlobalStyle />
       <Navbar />
+      <BackToTop showBelow = {80} />
 
       <Switch>
         <Route path="/" exact component={Homepage} />
@@ -27,8 +30,12 @@ function App({ matchs }) {
         <Route path="/termsAndConditions" component={TermsAndConditions} />
         <Route component={ErrorPage} />
       </Switch>
-    </div>
+    </Div>
   );
 }
 
 export default App;
+
+const Div = styled.div`
+  position: relative;
+`;
