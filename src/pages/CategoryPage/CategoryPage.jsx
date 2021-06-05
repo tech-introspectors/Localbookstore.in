@@ -7,13 +7,19 @@ import Footer from "./../../components/footer/Footer";
 import { useHistory } from "react-router-dom";
 
 const MainContainer = styled.div`
-  width: 100vw;
+  width: 90%;
   height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 10%;
-  transform: translateY(10%);
+  margin: 15rem auto 0 auto;
+  flex-direction: column;
+  // transform: translateY(10%);
+
+  @media (min-width: 768px){
+    width: 80%;
+    margin: 15rem auto 0 auto;
+  }
 `;
 
 const Container = styled.div``;
