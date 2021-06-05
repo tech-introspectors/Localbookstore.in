@@ -10,50 +10,66 @@ import { ImStarFull, ImStarHalf } from "react-icons/im";
 // ImStarEmpty
 
 const Container = styled.div`
-  width: 60vw;
-  height: 50vh;
+  width: 100%;
+  height: auto;
   background: ${lightWhiteShade};
-  padding: 5rem;
-  margin: 4rem;
-  border-radius: 3rem;
+  padding: 3rem;
+  margin-bottom: 4rem;
+  border-radius: 2rem;
   cursor: pointer;
+
+  @media (min-width: 648px){
+    padding: 4rem;
+  }
 `;
 const ContentContainer = styled.div`
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
 
-  @media screen and (max-width: 768px) {
-    font-size: 45%;
-    flex-direction: column;
+  @media (min-width: 768px) {
+    flex-direction: row;
   }
 `;
 
 const LeftContent = styled.div`
-  margin-right: 7rem;
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  @media screen and (max-width: 768px) {
-    margin-bottom: 7rem;
-    margin-right: 5rem;
+  @media (min-width: 768px){
+    margin-bottom: 0rem;
+    margin-right: 4rem;
   }
+  
 
   img {
-    width: 120%;
+    width: 25rem;
+    min-width: 20rem;
     border-radius: 2.5rem;
     box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.4);
     padding: 0.5rem;
+
+    @media (min-width: 768px){
+      width: 80%;
+    }
   }
 `;
 
 const RightContent = styled.div`
   h1.title {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     color: ${darkPrimaryColor};
     margin-bottom: 2rem;
     font-weight: bold;
   }
 
+  h2.price,p.message{
+     font-size: 1.7rem;
+  }
+
   h2.price {
-    font-size: 2.5rem;
     margin: 0.5rem 0 0 0;
     font-weight: bold;
   }
@@ -69,7 +85,6 @@ const RightContent = styled.div`
   }
 
   p.message {
-    font-size: 2rem;
     color: grey;
     margin-bottom: 1.5rem;
     font-weight: normal;

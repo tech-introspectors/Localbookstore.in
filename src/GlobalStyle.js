@@ -37,18 +37,6 @@ const GlobalStyle = createGlobalStyle`
         font-size: 1.7rem;
     }
 
-
-    @media screen and (max-width: 998px){
-        html{
-            font-size: 55%;
-        }
-    }
-
-    @media screen and (max-width: 768px){
-        html{
-            font-size: 45%;
-        }
-    }
     
 `;
 
